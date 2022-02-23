@@ -1,0 +1,25 @@
+{
+  "name": "authentication-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "my-sql": "^1.2.15",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+    
+  },
+  "keywords": [],
+  "author": "216074173@student.uj.ac.za",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+version: '3'
+services: 
+    node-authentication-microservervice:
+      container_name: accommodation_management-microservice
+      build: .
+      ports: 
+        - "5017:5017"
+      links:
+         - "mysql-accommodationsDBs"
+    mysql-accommodationsDBs:
+      container_name: accommodations-database
+      image: mysql:8.0.2
+      environment: 
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: accommodationsDB
+      ports: 
+        - "3300:3306"
+    

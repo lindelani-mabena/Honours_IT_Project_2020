@@ -1,0 +1,18 @@
+version: '3'
+services: 
+    node-reviews-microser:
+        container_name: reviews-microser
+        restart: always
+        build: .
+        ports: 
+            - "9015:9015"
+        links:
+             - "mysql-ReviewsManagementDB"
+    mysql-ReviewsManagementDB:
+        container_name: ReviewsDatabase
+        image: mysql:8.0.2
+        environment: 
+            MYSQL_ROOT_PASSWORD: password1
+            MYSQL_DATABASE: ReviewsManagementDB
+        ports: 
+            - "3333:3306"

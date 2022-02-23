@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditResidence">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="421dp"
+        android:layout_height="594dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444">
+
+
+    <RadioButton
+        android:id="@+id/rbGym"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="@string/has_gym" />
+
+    <RadioButton
+        android:id="@+id/rbWifi"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="@string/free_wifi" />
+
+    <RadioButton
+        android:id="@+id/rbWashingMachines"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="@string/washing_machines" />
+
+    <RadioButton
+        android:id="@+id/rbSecurity"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="@string/provides_security" />
+
+        <Spinner
+            android:id="@+id/spnResTyper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/spnResTyper">
+
+            <Button
+                android:id="@+id/btnConfirmEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#0275D8"
+                android:text="Confirm Edit" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

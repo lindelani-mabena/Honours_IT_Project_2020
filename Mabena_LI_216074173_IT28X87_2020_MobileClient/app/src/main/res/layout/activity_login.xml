@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="283dp"
+            android:layout_height="117dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+                />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0275D8"
+            android:layout_margin="4dp"
+            android:hint="@string/prompt_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:textColor="#0275D8"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:inputType="textPassword"
+            android:textColor="#0275D8"
+            android:hint="@string/prompt_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:textColor="#0275D8"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="#0275D8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toStartOf="@id/btnLogin"
+                android:layout_toLeftOf="@id/btnLogin"
+                android:background="#F43636"
+                android:text="Cancel" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#0275D8"
+            android:text="Forgot Password? Click Here" />
+        <TextView
+            android:id="@+id/txtNoAccount"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="#0275D8"
+            android:text="Do not have an account yet? Click Here" />
+
+        <TextView
+            android:id="@+id/txtMistake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F43636"
+            android:visibility="invisible"
+            android:text="The username and password do not match, please try again" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerChosenAccommodation">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ManagerChosenAccommodationCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="#EFF0F4"
+                    android:padding="10dp" />
+                <TextView
+                    android:id="@+id/txtAccommodationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtAccommodationAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtGym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtSecurity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtWashingMachines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+                <TextView
+                android:id="@+id/txtWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp" />
+                <TextView
+                    android:id="@+id/txtAccommodationType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/linearLayout">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="#0275D8"
+                android:text="Edit" />
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_toEndOf="@id/btnEdit"
+                android:layout_toRightOf="@id/btnEdit"
+                android:layout_marginRight="24dp"
+                android:background="#0275D8"
+                android:text="Delete" />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
